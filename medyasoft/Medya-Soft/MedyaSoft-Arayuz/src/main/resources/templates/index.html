@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+    <link rel="stylesheet" href="vendors/styles/style.css">
+    <script type="text/javascript"
+            src="vendors/jquery/jquery-3.2.1.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/media/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="src/plugins/datatables/media/css/responsive.dataTables.css">
+    <link rel="stylesheet" href="vendors/styles/style.css">
+    <style>
+        .select-box
+        {
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body><div class="pre-loader"></div>
+    {% include "include/head" %}
+
+<div class="container">
+    <div class="modal studentModel fade bs-example-modal-lg" id="bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" >Students</h4>
+                    <button onclick="closeModal()" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <form  method="post" action="users" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <label class="col-sm-12 col-md-2 col-form-label">Student Name</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input id="studentname" name="foodCategoryName" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModalStudent()"  type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button onclick="saveStudent()" type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal studentClassModel fade bs-example-modal-lg" id="bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myLargeModalLabel">Students</h4>
+                    <button onclick="closeModal()" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <form  method="post" action="users" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <label class="col-sm-12 col-md-2 col-form-label">Student Class Name</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input id="studentclassname" name="studentclassname" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="closeModalStudentClass()"  type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button onclick="saveStudentClass()" type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+        <div class="row">
+            <div class="col-md-1"> <button onclick="openModelStudent()" type="button" class="close" data-dismiss="modal" aria-hidden="true">Add</button>
+            </div>
+            <div class="col-md-11"></div>
+        </div>
+        <div class="row">
+            <table class="stripe hover multiple-select-row data-table-export studentTable nowrap">
+                <thead>
+                <tr>
+                    <th class="table-plus datatable-nosort">Student Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+        <div class="row">
+            <div class="col-md-1"> <button onclick="openModelStudentClass()" type="button" class="close" data-dismiss="modal" aria-hidden="true">Add</button>
+            </div>
+            <div class="col-md-11"></div>
+        </div>
+        <div class="row">
+            <table class="stripe hover multiple-select-row data-table-export studentClassTable nowrap">
+                <thead>
+                <tr>
+                    <th class="table-plus datatable-nosort">Student Class Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+        <div class="row">
+            <div class="col-md-5">
+                <select class="select-box" id="studentList"></select>
+            </div>
+            <div class="col-md-5">
+                <select class="select-box" id="studentClassList"></select>
+            </div>
+            <div class="col-md-1"> <button onclick="saveStudentInClass()" type="button" class="close" data-dismiss="modal" aria-hidden="true">Add</button>
+            </div>
+        </div>
+        <div class="row">
+            <table class="stripe hover multiple-select-row data-table-export studentInClassTable nowrap">
+                <thead>
+                <tr>
+                    <th class="table-plus datatable-nosort">Student Name</th>
+                    <th class="table-plus datatable-nosort">Class Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<script src="vendors/scripts/script.js"></script>
+<script src="src/plugins/highcharts-6.0.7/code/highcharts.js"></script>
+<script src="src/plugins/highcharts-6.0.7/code/highcharts-more.js"></script>
+<script src="src/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="src/plugins/datatables/media/js/dataTables.bootstrap4.js"></script>
+<script src="src/plugins/datatables/media/js/dataTables.responsive.js"></script>
+<script src="src/plugins/datatables/media/js/responsive.bootstrap4.js"></script>
+<!-- buttons for Export datatable -->
+<script src="src/plugins/datatables/media/js/button/dataTables.buttons.js"></script>
+<script src="src/plugins/datatables/media/js/button/buttons.bootstrap4.js"></script>
+<script src="src/plugins/datatables/media/js/button/buttons.print.js"></script>
+<script src="src/plugins/datatables/media/js/button/buttons.html5.js"></script>
+<script src="src/plugins/datatables/media/js/button/buttons.flash.js"></script>
+<script src="src/plugins/datatables/media/js/button/pdfmake.min.js"></script>
+<script src="src/plugins/datatables/media/js/button/vfs_fonts.js"></script>
+<script src="vendors/scripts/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Arayuz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Business" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-DB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Entity-Model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Error" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Helper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Model-Map" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Medya-Soft/MedyaSoft-Resource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiAuth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiEntityModel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiEnum" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiModel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiModel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiModel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiModel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiRepository" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiTool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiVek" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ZendemFramework/AltyapiWeb" charset="UTF-8" />
+  </component>
+</project>

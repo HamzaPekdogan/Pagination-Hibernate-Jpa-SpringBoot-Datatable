@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AltyapiAuth" />
+        <module name="AltyapiEntityModel" />
+        <module name="AltyapiEnum" />
+        <module name="AltyapiRepository" />
+        <module name="AltyapiTool" />
+        <module name="AltyapiVek" />
+        <module name="AltyapiWeb" />
+        <module name="Egitim-Kurumlari-Arayuz" />
+        <module name="EgitimKurumlariArayuz" />
+        <module name="MedyaSoft-Run" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AltyapiEnum (1)" target="1.8" />
+      <module name="Egitim-Kurumlari-Arayuz" target="1.8" />
+      <module name="Egitim-Kurumlari-Goruntu-Otomasyonu" target="1.8" />
+      <module name="EgitimKurumlariEntityModel" target="1.8" />
+      <module name="EgitimKurumlariResource" target="1.8" />
+      <module name="MedyaSoftBusiness" target="1.8" />
+      <module name="MedyaSoftDB" target="1.8" />
+      <module name="MedyaSoftEntityModel" target="1.8" />
+      <module name="MedyaSoftError" target="1.8" />
+      <module name="MedyaSoftHelper" target="1.8" />
+      <module name="MedyaSoftModel" target="1.8" />
+      <module name="MedyaSoftModelMap" target="1.8" />
+      <module name="MedyaSoftResource" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZendemFramework/AltyapiModel/AltyapiModel.iml" filepath="$PROJECT_DIR$/ZendemFramework/AltyapiModel/AltyapiModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Arayuz/Egitim-Kurumlari-Arayuz.iml" filepath="$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Arayuz/Egitim-Kurumlari-Arayuz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Goruntu-Otomasyonu.iml" filepath="$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Goruntu-Otomasyonu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZendemFramework/awdwad.iml" filepath="$PROJECT_DIR$/ZendemFramework/awdwad.iml" />
+    </modules>
+  </component>
+</project>

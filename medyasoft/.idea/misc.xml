@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Entity-Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Egitim-Kurumlari-Goruntu-Otomasyonu/Egitim-Kurumlari-Resource/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Business/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-DB/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Entity-Model/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Error/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Helper/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Model-Map/pom.xml" />
+        <option value="$PROJECT_DIR$/Medya-Soft/MedyaSoft-Resource/pom.xml" />
+        <option value="$PROJECT_DIR$/ZendemFramework/AltyapiModel/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
